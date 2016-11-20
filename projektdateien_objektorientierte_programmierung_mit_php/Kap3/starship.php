@@ -22,7 +22,7 @@
 	$enterprise = new Starship ("Enterprise 2", 15);
 	$ramboo = new Starship ("Shuttle", 3);
 	
-	//Ausgabe
+	//Ausgabedfgdfdfdf
 	
 	echo $enterprise;
 	echo $ramboo;
