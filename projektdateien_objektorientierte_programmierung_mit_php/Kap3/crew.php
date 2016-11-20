@@ -3,6 +3,7 @@
   	private $captain;
 	private $firstOfficer;
 	private $navigator;
+private $navigator1;
 	
 	function __construct($cap, $first, $nav)
 	{
