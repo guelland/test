@@ -1,7 +1,7 @@
 <?php
 try {
 	require_once 'includes/connect.php';
-	mysqli_select_db($db, "Adressen");
+	mysqli_select_db($db, "oopgb");
 } catch (Exception $e) {
 	$error = $e -> getMessage();
 }
@@ -21,9 +21,9 @@ echo "<p> $error</p>";
 }else{
 echo "<p>Die Verbindung funktioniert!</p>";
 }
-$sql = "SELECT Name, Mail FROM Adressen";
+$sql = "SELECT name, mail FROM person";
 $res = mysqli_query($db, $sql);
-$num = mysqli_num_rows($res);
+$num = mysqli_num_rows($Adressen);
 if($num>0){
 	echo "Ergebnis:". $num . " Datensätze. <br>";
 } else{
@@ -43,8 +43,8 @@ if($num>0){
     </tr>
     <?php while ($daten = mysqli_fetch_assoc($res)){
     echo "<tr>";
-    echo "<td>". $daten["Name"]."</td>";
-	echo "<td>". $daten["Mail"]."</td>";
+    echo "<td>". $daten["name"]."</td>";
+	echo "<td>". $daten["mail"]."</td>";
        
     echo "</tr> ";
 	}

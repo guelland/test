@@ -21,7 +21,7 @@ echo "<p> $error</p>";
 }else{
 echo "<p>Die Verbindung funktioniert!</p>";
 }
-$sql = "SELECT Name, Mail FROM Adressen";
+$sql = "SELECT Name, Mail FROM person";
 $res = mysqli_query($db, $sql);
 $num = mysqli_num_rows($res);
 if($num>0){
