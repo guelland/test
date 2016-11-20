@@ -1,0 +1,22 @@
+table {
+    max-width: 1000px;
+    border-collapse: collapse;
+    border: 1px solid #c9c9c9;
+    margin: 0 auto 20px 50px;
+}
+th {
+    background-color: #ddd;
+    color: #555;
+    padding: 0.5em 1em;
+    text-align: left;
+}
+td {
+    vertical-align: top;
+    padding: 0.25em 1em;
+}
+tr {
+    border-bottom: 1px solid #c9c9c9;
+}
+tr:nth-child(even) {
+    background-color: #e7edf6;
+}
