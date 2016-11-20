@@ -3,7 +3,7 @@
 	//Definiere Klasse Raumschiff
 	class Starship{
 		//mit einer Veräderung auf die Sichtbarkeit der Eigenschaft kann die Kindklasse Einfluss nehmen oder es kommt zu einer Fehlermeldung
-	private $speed = 5;
+	private $speed =10;
 		
 		 function increase($value)
 		{
@@ -45,7 +45,7 @@
 	
 $flux = new Cargoship();
 $flux->speed=12;
-$flux->increase(45);
+$flux->increase(100);
 $flux->moreCargo(600);
 
 

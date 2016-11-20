@@ -13,7 +13,7 @@
 		
 		function __toString()
 		{
-			return "$this->designation, " . "$this->speed Lj/h <br>";
+		return "$this->designation, " . "$this->speed Lj/h <br>";
 		}
 	}
 	

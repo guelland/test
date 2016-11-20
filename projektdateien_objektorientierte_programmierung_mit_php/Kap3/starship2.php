@@ -35,8 +35,8 @@
 	
 	echo $enterprise;
 	echo $ramboo;
-	echo $flex;
 	echo $flex2;
+	echo $flex;
 ?>	
 </body>
 </html>
